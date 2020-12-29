@@ -2,7 +2,7 @@ body {
     margin: 60px auto;
     width: 70%;
     background-color: rgb(2,0,36);
-    background-colour: linear-gradient(32deg, rgba(2,0,36,1) 0%, rgba(9,9,121,1) 35%, rgba(0,212,255,1) 100%);
+    background-color: linear-gradient(32deg, rgba(2,0,36,1) 0%, rgba(9,9,121,1) 35%, rgba(0,212,255,1) 100%);
 
 }
 nav ul, footer ul {
