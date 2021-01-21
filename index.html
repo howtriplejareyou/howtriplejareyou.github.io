@@ -18,12 +18,17 @@
 <!-- /. <iframe src="https://docs.google.com/spreadsheets/d/e/2PACX-1vT7WCXGjfnPVMUD9uPD_FXiszQdXS1i1f1OGCD2pv2ZzAtmml306C3xSd2_AchVcBuClfjZ_rVXgGL6/htmlembed?gid=2098665925&amp;single=true&amp;widget=false&amp;headers=false&amp;range=C6:H30&amp;chrome=false"width="80%" height="400px" frameborder="0" marginheight="0" marginwidth="auto"></iframe>		-->
 		<div>
  		 <iframe id="chart" width="80%" height="600" seamless frameborder="0" scrolling="no" src="https://docs.google.com/spreadsheets/d/1zzxJTdDT3JfW_0UDl-KYbp4TO61M7csXdWtkpm0T1v8/htmlembed?gid=2098665925&amp;single=true&amp;widget=false&amp;headers=false&amp;range=D6:H30&amp;chrome=false"></iframe>
- 		 <script>
-		window.setInterval("reloadIFrame();", 10000);
-		function reloadIFrame() {
- 		document.getElementById("chart").src="https://docs.google.com/spreadsheets/d/1zzxJTdDT3JfW_0UDl-KYbp4TO61M7csXdWtkpm0T1v8/htmlembed?gid=2098665925&amp;single=true&amp;widget=false&amp;headers=false&amp;range=D6:H30&amp;chrome=false";
-		}
-		</script>
+ 		<script>
+
+function f1()
+{
+ var x=document.getElementById("myiframe");
+   x.src=x.src+Math.floor(random()%100000);
+}
+
+setInterval(f1,30*1000);
+
+</script>
 		</div>
 		</center>
 		<footer>
