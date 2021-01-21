@@ -15,16 +15,21 @@
 		</div><!-- /.container -->
 		<center>
 			<div>
-			<iframe id="chart" src="https://docs.google.com/spreadsheets/d/1zzxJTdDT3JfW_0UDl-KYbp4TO61M7csXdWtkpm0T1v8/htmlembed?gid=2098665925&amp;single=true&amp;range=A1:D23" scrolling="no" style="height: 800px; width: 800px; ">
+			<iframe id="chart" src="https://docs.google.com/spreadsheets/d/1zzxJTdDT3JfW_0UDl-KYbp4TO61M7csXdWtkpm0T1v8/htmlembed?gid=2098665925&amp;single=true&amp;range=A1:D23&amp;chrome=false&amp;headings=false&amp;widget=false" scrolling="no" style="height: 800px; width: 800px; ">
 			</iframe>
 			</div>
 			
 			
  	 		<script>
-				window.setInterval("reloadIFrame();", 30000);
-				function reloadIFrame() {
-				 document.getElementById("chart").src="https://docs.google.com/spreadsheets/d/1zzxJTdDT3JfW_0UDl-KYbp4TO61M7csXdWtkpm0T1v8/htmlembed?gid=2098665925&amp;single=true&amp;widget=false&amp;headers=false&amp;range=A1:D23&amp;chrome=false";
-					}
+
+				function f1()
+				{
+				 var x=document.getElementById("chart");
+				   x.src=x.src+Math.floor(random()%100000);
+				}
+
+				setInterval(f1,30*1000);
+
 			</script>
 		</center>
 		<footer>
