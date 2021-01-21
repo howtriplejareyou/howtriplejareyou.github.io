@@ -18,10 +18,9 @@
 		<div>
  		<iframe id="chart" width="80%" height="600" src="https://docs.google.com/spreadsheets/d/1zzxJTdDT3JfW_0UDl-KYbp4TO61M7csXdWtkpm0T1v8/htmlembed?gid=2098665925&amp;single=true&amp;widget=false&amp;headers=false&amp;range=A1:D23&amp;chrome=false"></iframe>
  	 		<script>
-window.setInterval("reloadIFrame();", 10000);
-
+window.setInterval("reloadIFrame();", 30000);
 function reloadIFrame() {
- document.frames["chart"].src.reload();
+ document.getElementById("chart").src="https://docs.google.com/spreadsheets/d/1zzxJTdDT3JfW_0UDl-KYbp4TO61M7csXdWtkpm0T1v8/htmlembed?gid=2098665925&amp;single=true&amp;widget=false&amp;headers=false&amp;range=A1:D23&amp;chrome=false";
 }
 </script>
 		</div>
